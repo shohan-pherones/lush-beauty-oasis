@@ -6,7 +6,7 @@ import Footer from "./components/Footer";
 
 function App() {
   return (
-    <div className="wrapper bg-gray-100 text-gray-700">
+    <div className="wrapper">
       <div className="app min-h-screen">
         <Navbar />
         <Routes>

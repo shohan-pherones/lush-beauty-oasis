@@ -3,3 +3,28 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.link-item {
+  position: relative;
+}
+
+.link-item::after {
+  content: "";
+  width: 5px;
+  height: 5px;
+  background-color: #14b8a6;
+  border-radius: 100px;
+  position: absolute;
+  left: -50%;
+  top: -30%;
+  transform: translateX(-50%);
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.3s ease-in-out;
+}
+
+.link-item:hover::after {
+  left: 50%;
+  opacity: 1;
+  visibility: visible;
+}

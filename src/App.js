@@ -1,7 +1,20 @@
+import { Routes, Route } from "react-router-dom";
+import Home from "./pages/Home";
+import NotFound from "./pages/NotFound";
+import Navbar from "./components/Navbar";
+import Footer from "./components/Footer";
+
 function App() {
   return (
-    <div className="app">
-      <h1 className="text-6xl">hello</h1>
+    <div className="wrapper">
+      <div className="app min-h-screen">
+        <Navbar />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="*" element={<NotFound />} />
+        </Routes>
+      </div>
+      <Footer />
     </div>
   );
 }

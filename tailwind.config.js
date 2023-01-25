@@ -4,12 +4,9 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        sans: ["Montserrat, sans-serif"],
+        sans: ["Rubik, sans-serif"],
       },
     },
   },
-  plugins: [require("daisyui")],
-  daisyui: {
-    themes: ["cupcake"],
-  },
+  plugins: [],
 };
